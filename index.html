@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open MyApp</title>
+    <script>
+        // Try to open the app using the URI scheme
+        window.onload = function() {
+            window.location = "sweetdelight://deeplink/spinwheel";
+
+            // Redirect to App Store after a delay if the app isn't installed
+            setTimeout(function() {
+                window.location = "https://apps.apple.com/pl/app/sweet-delight-blast-match-3/id6478508838";
+            }, 1000); // Adjust delay as needed
+        };
+    </script>
+</head>
+<body>
+    <p>If you are not redirected, <a href="https://apps.apple.com/pl/app/sweet-delight-blast-match-3/id6478508838">click here to download the app</a>.</p>
+</body>
+</html>
